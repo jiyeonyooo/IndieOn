@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-album_covers {
+    background-color: aqua;
+    width: 60px;
+}
+
