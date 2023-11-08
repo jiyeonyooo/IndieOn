@@ -1,10 +1,83 @@
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+
 .container {
     display: flex;
     justify-content: flex-start;
+    height: 100vh;
+    width: calc(100% - 62px); /*전체너비-header너비(60px+border2px)*/
+    background-color: rgb(255, 255, 255);
+}
+
+.container-main {
+    margin: auto;
+}
+
+.marquee-wrap {
+    width: 500px;
+    padding-left: 120px;
 }
 
 .container-album_covers {
-    background-color: aqua;
-    width: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 100vh;
+    border-right: 2px solid black;
+    overflow: hidden;
+}
+
+.album_covers {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 5px 5px rgb(0,0,0, 0.3);
+    margin-top: 20px;
+}
+
+.container-main_slogan {
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 120px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.regular {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px #3A4CA8;
+}
+
+.bold {
+    color: #3A4CA8;
+    -webkit-text-stroke: 5px #3A4CA8;
+    font-weight: bold;
+}
+
+.container-main_playerbar {
+    background-color: #3A4CA8;
+    width: 780px;
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+.container-main_playertab {
+    display: flex;
+    justify-content: center;
+}
+
+.lp {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+}
+
+.back, .forward, .pause {
+    color: #3A4CA8;
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px 0 10px;
 }
 
