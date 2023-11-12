@@ -2,17 +2,15 @@ import verticalLogo from './img/indieon-logo-vertical.png';
 import { HiMenu } from 'react-icons/hi'
 import './App.css';
 import Container from './container';
+import Textslider from './text-slider';
 
 function App() {
   return (
     <div className="App">
       <div className="wrap">
-        {/*<header className="header">
-          <HiMenu className="header-menu_icon"></HiMenu>
-          <img src={verticalLogo} className="header-logo" alt="logo"></img>
-  </header>*/}
         <Container />
       </div>
+      {/* <Textslider /> */}
       <div className="temp"></div>
     </div>
   );

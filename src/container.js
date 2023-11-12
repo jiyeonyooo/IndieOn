@@ -3,18 +3,36 @@ import lp from './img/indieon-lp.png';
 import lacuna from './img/lacuna-1.jpg';
 import lowhangingfruits from './img/lowhangingfruits-1.jpg';
 import darin from './img/darin-1.jpg';
+import nah from './img/nah.webp';
+import joonhyung from './img/joonhyung.jpg';
+import jeongaro from './img/jeongaro.webp'
+
 import logo from './img/indieon-logo.png'
 import { IoMdPause } from 'react-icons/io';
 import { IoPlayBackSharp, IoPlayForwardSharp } from 'react-icons/io5'
 
 function Container() {
+
     return (
         <div className="container">
             <div className="container-album_covers">
                 <div className="marquee-wrap">
-                    <img className="album_covers" src={lacuna} alt="lacuna-1"></img>
-                    <img className="album_covers" src={lowhangingfruits} alt="lowhangingfruits-1"></img>
-                    <img className="album_covers" src={darin} alt="darin"></img>
+                    <div className="marquee-1">
+                        <img className="album_covers" src={lacuna} alt="lacuna-1"></img>
+                        <img className="album_covers" src={darin} alt="darin"></img>
+                        <img className="album_covers" src={nah} alt="nah"></img>
+                        <img className="album_covers" src={lowhangingfruits} alt="lowhangingfruits-1"></img>
+                        <img className="album_covers" src={joonhyung} alt="joonhyung"></img>
+                        <img className="album_covers" src={jeongaro} alt="jeongaro"></img>
+                    </div>
+                    <div className="marquee-2">
+                        <img className="album_covers" src={lacuna} alt="lacuna-1"></img>
+                        <img className="album_covers" src={darin} alt="darin"></img>
+                        <img className="album_covers" src={nah} alt="nah"></img>
+                        <img className="album_covers" src={lowhangingfruits} alt="lowhangingfruits-1"></img>
+                        <img className="album_covers" src={joonhyung} alt="joonhyung"></img>
+                        <img className="album_covers" src={jeongaro} alt="jeongaro"></img>
+                    </div>
                 </div>
             </div>
             <div className="container-main">
@@ -27,12 +45,13 @@ function Container() {
                     <img src={logo} className="container-main-nav-logo" alt="logo"></img>
                 </div>
                 <div className="container-main-header">
-                    <div className="container-main_slogan">
-                        <span className="regular">Let's Put </span>
-                        <span className="bold">ON</span><br></br>
-                        <span className="bold">Ind-·e </span>
-                        <span className="regular">Music!</span>
-                    </div>
+                    <svg className="container-main_slogan">
+                        <text className="regular" x="240px" y="150px" fill="none">Let's Put </text>
+                        <text className="bold" x="890px" y="150px" fill="none">ON</text><br></br>
+                        <text className="bold" x="190px" y="310px" fill="none">Ind-·e </text>
+                        <text className="regular" x="640px" y="310px" fill="none">Music</text>
+                        <text className="emphasis" x="1100px" y="310px" fill="none">!</text>
+                    </svg>
                     <div className="container-main_playerbar">
                         <img src={lp} className="lp" alt="logo"></img>
                     </div>

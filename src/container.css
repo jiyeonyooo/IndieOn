@@ -30,9 +30,37 @@
     
 }
 
+@keyframes verticalSlide {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(-100%);
+    } 50.001% {
+        transform: translateY(100%);
+    } 100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes verticalSlide2 {
+    0% {
+        transform: translateY(0);
+    } 100% {
+        transform: translateY(-200%);
+    }
+}
+
 .marquee-wrap {
     width: 500px;
     margin-left: 150px;
+}
+
+.marquee-1 {
+    animation: verticalSlide 60s linear  infinite;
+}
+
+.marquee-2 {
+    animation: verticalSlide2 60s linear  infinite;
 }
 
 .container-album_covers {
@@ -76,20 +104,48 @@
 }
 
 .container-main_slogan {
-    font-family: 'Pretendard-ExtraBold';
-    font-size: 150px;
     text-align: center;
+    width: 100%;
+    height: 350px;
+    stroke: #3A4CA8;
+    stroke-width: 2px;
 }
 
-.regular {
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 2px #3A4CA8;
-}
+@keyframes filling {
+    from{
+      fill: #3A4CA8;
+      fill-opacity: 0;
+    }
+    to {
+      fill: #3A4CA8;
+      fill-opacity: 1;
+    }
+  }
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
 
 .bold {
-    color: #3A4CA8;
-    -webkit-text-stroke: 5px #3A4CA8;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: dash 6s ease-in forwards, filling 6s linear forwards;
     font-weight: bold;
+}
+
+
+
+.emphasis {
+    animation: filling 0.5s linear forwards;
+    animation-delay: 5.5s;
+}
+
+.container-main_slogan text {
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 150px;
 }
 
 .container-main_playerbar {
@@ -104,10 +160,17 @@
     justify-content: center;
 }
 
+@keyframes lpSlide {
+    to {
+        transform: translateX(1000%);
+    }
+}
+
 .lp {
     width: 35px;
     height: 35px;
     margin-top: -15px;
+    
 }
 
 .back, .forward, .pause {
