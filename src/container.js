@@ -15,7 +15,7 @@ function Container() {
 
     return (
         <div className="container">
-            <div className="container-album_covers">
+            {/* <div className="container-album_covers">
                 <div className="marquee-wrap">
                     <div className="marquee-1">
                         <img className="album_covers" src={lacuna} alt="lacuna-1"></img>
@@ -34,7 +34,7 @@ function Container() {
                         <img className="album_covers" src={jeongaro} alt="jeongaro"></img>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="container-main">
                 <div className="container-main-nav">
                     <ul className="container-main-nav-menu">
@@ -45,13 +45,19 @@ function Container() {
                     <img src={logo} className="container-main-nav-logo" alt="logo"></img>
                 </div>
                 <div className="container-main-header">
-                    <svg className="container-main_slogan">
-                        <text className="regular" x="240px" y="150px" fill="none">Let's Put </text>
-                        <text className="bold" x="890px" y="150px" fill="none">ON</text><br></br>
-                        <text className="bold" x="190px" y="310px" fill="none">Ind-·e </text>
-                        <text className="regular" x="640px" y="310px" fill="none">Music</text>
-                        <text className="emphasis" x="1100px" y="310px" fill="none">!</text>
-                    </svg>
+                    <div className="container-main-svg">
+                        <svg className="container-main_slogan">
+                            <text x="50%" y="150px" fill="none">
+                                <tspan className="regular">Let's Put</tspan>
+                                <tspan className="bold"> ON</tspan>
+                            </text>
+                            <text x="50%" y="310px" fill="none">
+                                <tspan className="bold">Ind-·e </tspan>
+                                <tspan className="regular">Music</tspan>
+                                <tspan className="emphasis"> !</tspan>
+                            </text>
+                        </svg>
+                    </div>
                     <div className="container-main_playerbar">
                         <img src={lp} className="lp" alt="logo"></img>
                     </div>
