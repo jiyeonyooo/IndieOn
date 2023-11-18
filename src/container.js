@@ -15,26 +15,6 @@ function Container() {
 
     return (
         <div className="container">
-            {/* <div className="container-album_covers">
-                <div className="marquee-wrap">
-                    <div className="marquee-1">
-                        <img className="album_covers" src={lacuna} alt="lacuna-1"></img>
-                        <img className="album_covers" src={darin} alt="darin"></img>
-                        <img className="album_covers" src={nah} alt="nah"></img>
-                        <img className="album_covers" src={lowhangingfruits} alt="lowhangingfruits-1"></img>
-                        <img className="album_covers" src={joonhyung} alt="joonhyung"></img>
-                        <img className="album_covers" src={jeongaro} alt="jeongaro"></img>
-                    </div>
-                    <div className="marquee-2">
-                        <img className="album_covers" src={lacuna} alt="lacuna-1"></img>
-                        <img className="album_covers" src={darin} alt="darin"></img>
-                        <img className="album_covers" src={nah} alt="nah"></img>
-                        <img className="album_covers" src={lowhangingfruits} alt="lowhangingfruits-1"></img>
-                        <img className="album_covers" src={joonhyung} alt="joonhyung"></img>
-                        <img className="album_covers" src={jeongaro} alt="jeongaro"></img>
-                    </div>
-                </div>
-            </div> */}
             <div className="container-main">
                 <div className="container-main-nav">
                     <ul className="container-main-nav-menu">
