@@ -110,4 +110,26 @@
     border-radius: 60px;
     border: 2px solid rgba(196, 196, 196, 1);
     margin: 10px 0;
+    display: flex;
+}
+.text-content {
+    width: calc(100% - 56px - 28px);
+    height: 56px;
+    background-color: #ffffff;
+    margin: 0 0 0 28px;
+}
+
+.text-sending-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    margin: 5px;
+    background-color: #3477f4;
+}
+
+.upper-arrow {
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    margin: 8px
 }

@@ -3,6 +3,7 @@ import headphone from './img/headphone.webp';
 import { IoIosArrowBack } from "react-icons/io";
 import { PiVideoCameraLight } from "react-icons/pi";
 import { FaPlus } from "react-icons/fa6";
+import { FaArrowUp } from "react-icons/fa6";
 
 function Iphone() {
     return (
@@ -29,7 +30,9 @@ function Iphone() {
                     </div>
                     <div className="text">
                         <div className="text-content"></div>
-                        <div className="text-sending-btn"></div>
+                        <div className="text-sending-btn">
+                            <FaArrowUp className="upper-arrow"></FaArrowUp>
+                        </div>
                     </div>
                 </div>
             </div>
