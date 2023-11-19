@@ -138,3 +138,15 @@
     color: rgb(255, 255, 255);
     margin: 8px
 }
+
+.message-left {
+    width: 80%;
+    float: left;
+    margin: 5px;
+}
+
+.message-right {
+    width: 80%;
+    float: right;
+    margin: 5px;
+}
