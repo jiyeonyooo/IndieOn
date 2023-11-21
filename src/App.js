@@ -3,6 +3,7 @@ import { HiMenu } from 'react-icons/hi'
 import './App.css';
 import Container from './container';
 import Messagepage from './messagepage.js';
+import Meaning from './meaning.js';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Container />
       </div>
       <Messagepage />
+      <Meaning />
     </div>
   );
 }
